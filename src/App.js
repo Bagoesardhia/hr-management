@@ -6,7 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import Modules
 import LoginPages from "./modules/login/pages/loginPages";
-import RegisterPages from "./modules/login/pages/registerPages";
+import DashboardPages from './modules/dashboard/pages/dashboardPages'
+import HomeSetupPages from './modules/setup/pages/dashboard/homeSetupPages'
+import SetupEmployee from "./modules/setup/pages/setupEmployee/setupEmployee";
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LoginPages />} />
-          <Route path="/register" element={<RegisterPages />} />
+          <Route path="/dashboard" element={<DashboardPages />} />
+          <Route path="/setup" element={<HomeSetupPages />} />
+          <Route path="/setupEmpl" element={<SetupEmployee />} />
         </Routes>
       </BrowserRouter>
     </div>

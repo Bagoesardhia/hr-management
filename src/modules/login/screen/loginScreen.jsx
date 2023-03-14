@@ -9,8 +9,8 @@ import TextField from "@mui/material/TextField";
 
 
 export default function LoginScreen() {
-  function handleRegister() {
-    window.location = "/register";
+  function handleLogin() {
+    window.location = "/dashboard";
   }
 
   return (
@@ -56,7 +56,7 @@ export default function LoginScreen() {
           />
 
           <CardActions></CardActions>
-          <Button size="small" color="primary">
+          <Button size="small" color="primary" onClick={handleLogin}>
             Login
           </Button>
         </Card>
